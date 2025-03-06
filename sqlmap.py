@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 
 """
@@ -620,6 +621,7 @@ if __name__ == "__main__":
         if threading.active_count() > 1:
             os._exit(getattr(os, "_exitcode", 0))
         else:
+            
             sys.exit(getattr(os, "_exitcode", 0))
 else:
     # cancelling postponed imports (because of CI/CD checks)
